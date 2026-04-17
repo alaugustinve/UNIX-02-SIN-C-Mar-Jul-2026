@@ -168,3 +168,10 @@ Report any translation bugs to <https://translationproject.org/team/>
 Full documentation <https://www.gnu.org/software/coreutils/ls>
 or available locally via: info '(coreutils) ls invocation'
 @alaugustinve ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ man ls **This command shows a manual. The controls for this manual are, lowercase "n" to go forward uppercase "n". You can use / to look for a word. You quit the manual by pressing q**
+@alaugustinve ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ man git-clone **This command shows the manual of git-clone, you can look for explanations and commands here aswell**
+--depth <depth>
+           Create a shallow clone with a history truncated to the specified number of commits. Implies --single-branch unless --no-single-branch is given to fetch the histories near the tips of all branches. If
+           you want to clone submodules shallowly, also pass --shallow-submodules.
+           @alaugustinve ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ ls -l
+total 52
+-rw-rw-rw- 1 codespace codespace 10919 Apr 17 14:45 boot_exploration.sh **The first variable defines the type of file it is, the first 3 variables group shows which permissions the user has, the second 3 variables shows the permissions for the group and the last 3 shows the permissions for others**
