@@ -1,0 +1,1 @@
+mdkir nueva_carpeta #This command is used to create a new folder
