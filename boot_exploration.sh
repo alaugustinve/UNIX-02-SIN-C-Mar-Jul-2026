@@ -19,4 +19,10 @@ drwxrwxrwx+ 8 codespace root      4.0K Apr 17 14:23 .git
 -rw-rw-rw-  1 codespace root      4.6K Apr 17 14:22 .gitignore
 -rw-rw-rw-  1 codespace root       34K Apr 17 14:22 LICENSE
 -rw-rw-rw-  1 codespace root        53 Apr 17 14:22 README.md
--rw-rw-rw-  1 codespace codespace  350 Apr 17 14:26 boot_exploration.sh **These 3 commands function as the same, only
+-rw-rw-rw-  1 codespace codespace  350 Apr 17 14:26 boot_exploration.sh **These 3 commands function as the same, they are useful to make the commands lines legible for humans**
+@alaugustinve ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ rmdir -- -rf 
+rmdir: failed to remove '-rf': No such file or directory
+@alaugustinve ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ mkdir -- -rf **Creates the folder with the uncommon name**
+@alaugustinve ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ rdmir -- -rf
+bash: rdmir: command not found                                                             **Typing error**
+@alaugustinve ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ rmdir -- -rf **removes the folder**
