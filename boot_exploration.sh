@@ -190,10 +190,13 @@ total 52
 -rw-rw-rw- 1 codespace root         53 Apr 17 14:22 README.md
 -rw-rw-rw- 1 codespace codespace 11884 Apr 17 14:56 boot_exploration.sh
 -rwxrwxrwx 1 codespace codespace     0 Apr 17 14:55 script.sh
-@alaugustinve ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ chmod u+x script.sh
+@alaugustinve ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ chmod u+x script.sh #Permission only for owner
+@alaugustinve ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ ls -l @alaugustinve ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ chmod u+x script.sh
 @alaugustinve ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ ls -l
 total 52
 -rw-rw-rw- 1 codespace root      34523 Apr 17 14:22 LICENSE
 -rw-rw-rw- 1 codespace root         53 Apr 17 14:22 README.md
 -rw-rw-rw- 1 codespace codespace 12288 Apr 17 14:57 boot_exploration.sh
 -rwxrwxrwx 1 codespace codespace     0 Apr 17 14:55 script.sh
+@alaugustinve ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ touch secreto.txt #Creates a new file
+@alaugustinve ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ chmod o-r secreto.txt #Removes reading aviability for "others"
