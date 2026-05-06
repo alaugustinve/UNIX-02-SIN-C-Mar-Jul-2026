@@ -1,0 +1,5 @@
+  1  mkdir Linux
+    2  cd Linux
+    3  touch script_linux_cisco_1.sh
+    4  touch github_hisotry.txt
+    5  history
