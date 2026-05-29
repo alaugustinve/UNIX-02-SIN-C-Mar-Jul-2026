@@ -16,4 +16,14 @@ root
                                                                                                                 
  [Alexander-Augustin]  🍄 # touch Documentacion.txt
                                                                                                                 
- [Alexander-Augustin]  🍄 # 
+                                                                                                                
+ [Alexander-Augustin]  🍄 # id -gn
+root
+                                                                                                                
+ [Alexander-Augustin]  🍄 # echo "Grupo actual: $(id -gn)"
+Grupo actual: root
+                                                                                                                
+ [Alexander-Augustin]  🍄 # touch ~/antes_de_newgrp.txt
+                                                                                                                
+ [Alexander-Augustin]  🍄 # ls -la ~/antes_de_newgrp.txt
+-rw-r--r-- 1 root root 0 may 29 15:04 /root/antes_de_newgrp.txt
