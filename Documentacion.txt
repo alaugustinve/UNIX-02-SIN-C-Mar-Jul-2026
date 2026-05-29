@@ -6,24 +6,43 @@ changeincase  LICENSE  README.md
  [Alexander-Augustin]  🍄 # id 
 uid=0(root) gid=0(root) grupos=0(root)
                                                                                                                 
- [Alexander-Augustin]  🍄 # id -gn 
+ [Alexander-Augustin]  🍄 # id -gn #Shows the name of the current primary group of the user
 root
                                                                                                                 
- [Alexander-Augustin]  🍄 # touch ~/test_grupo_heredado.txt 
+ [Alexander-Augustin]  🍄 # touch ~/test_grupo_heredado.txt #Creates an empty file in the home directory to check which group it inherits
                                                                                                                 
- [Alexander-Augustin]  🍄 # ls -la ~/test_grupo_heredado.txt
+ [Alexander-Augustin]  🍄 # ls -la ~/test_grupo_heredado.txt #Shows detailed information about the file, including owner, group, permissions, size, and date
 -rw-r--r-- 1 root root 0 may 29 14:55 /root/test_grupo_heredado.txt
                                                                                                                 
- [Alexander-Augustin]  🍄 # touch Documentacion.txt
+ [Alexander-Augustin]  🍄 # touch Documentacion.txt #Creates a text file for Documentation
                                                                                                                 
                                                                                                                 
- [Alexander-Augustin]  🍄 # id -gn
+ [Alexander-Augustin]  🍄 # id -gn #Identifies the current group
 root
                                                                                                                 
- [Alexander-Augustin]  🍄 # echo "Grupo actual: $(id -gn)"
+ [Alexander-Augustin]  🍄 # echo "Grupo actual: $(id -gn)" #Command to print the current gruop
 Grupo actual: root
                                                                                                                 
- [Alexander-Augustin]  🍄 # touch ~/antes_de_newgrp.txt
+ [Alexander-Augustin]  🍄 # touch ~/antes_de_newgrp.txt #Command to create the file before the new group
                                                                                                                 
- [Alexander-Augustin]  🍄 # ls -la ~/antes_de_newgrp.txt
+ [Alexander-Augustin]  🍄 # ls -la ~/antes_de_newgrp.txt #Command to theck the new group attributes
 -rw-r--r-- 1 root root 0 may 29 15:04 /root/antes_de_newgrp.txt
+newgrp desarrolladores
+   13  exit #Helps exit the current terminal to go back to root/home
+   14  which newgrp #Shows the location of the newgrp command if it is installed
+   15  which Desarrolladores #Incorrect command attempt
+   16  ig -gn #Incorrect command attempt
+   17  id -gn #Identifies the current group
+   18  touch ~/dentro_de_newgrp.txt #Creates a file to verify the inherited active group
+   19  ls -la ~/dentro_de_newgrp.txt #Shows information about the file and group permissions
+   20  mkdir -p ~/proyecto_dev/src #Creates the proyecto_dev folder and its src subfolder, -p prevents errors if they already exist
+   21  ls -la ~/ #shows all the home files with detailed information
+    [Alexander-Augustin]  🍄 # echo $$ #command to echo the PID number 
+26439 #This is the PID number inside the subshell
+                                                                                                                                                          
+ [Alexander-Augustin]  🍄 # exit                       
+                                                                                                                                                          
+ [Alexander-Augustin]  🍄 # echo $$ #command to echo the PID number 
+24755 #This is the PID number outside the subshell
+ [Alexander-Augustin]  🍄 # id -gn 
+root #This is to make sure it as outside the subshell
