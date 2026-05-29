@@ -1,0 +1,19 @@
+ [Alexander-Augustin]  🍄 # ls #Checks the list of files
+changeincase  LICENSE  README.md
+                                                                                                                
+ [Alexander-Augustin]  🍄 # touch security.sh #Creates the security script
+                                                                                                                
+ [Alexander-Augustin]  🍄 # id 
+uid=0(root) gid=0(root) grupos=0(root)
+                                                                                                                
+ [Alexander-Augustin]  🍄 # id -gn 
+root
+                                                                                                                
+ [Alexander-Augustin]  🍄 # touch ~/test_grupo_heredado.txt 
+                                                                                                                
+ [Alexander-Augustin]  🍄 # ls -la ~/test_grupo_heredado.txt
+-rw-r--r-- 1 root root 0 may 29 14:55 /root/test_grupo_heredado.txt
+                                                                                                                
+ [Alexander-Augustin]  🍄 # touch Documentacion.txt
+                                                                                                                
+ [Alexander-Augustin]  🍄 # 
